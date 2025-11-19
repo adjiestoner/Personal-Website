@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>10 Hama dan Penyakit Tanaman - Interaktif</title>
+  <style>
+    body{
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #051b28, #120a45);
+      margin:0;
+      padding:20px;
+      overflow-x:hidden;
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:30px;
+      font-size:2.4rem;
+      color:#35aac7;
+      font-weight:700;
+    }
+
+    .back-btn{
+      display:inline-block;
+      background:#285990;
+      color: #ffffff;
+      padding:12px 18px;
+      border-radius:10px;
+      text-decoration:none;
+      margin-bottom:25px;
+      transition:0.3s;
+    }
+    .back-btn:hover{background:#1e293b; transform:scale(1.05)}
+
+    .container{
+      max-width:900px;
+      margin:auto;
+    }
+
+    .card{
+      background:#00c8ff9e;
+      padding:18px;
+      border-radius:15px;
+      margin-bottom:20px;
+      box-shadow:0 4px 15px rgba(237, 234, 234, 0.434);
+      cursor:pointer;
+      transition:transform 0.25s ease;
+    }
+
+    .card:hover{
+      transform:scale(1.02);
+    }
+
+    .card h2{
+      margin:0;
+      font-size:1.4rem;
+      color:#000000;
+    }
+
+    .content{
+      display:none;
+      margin-top:10px;
+      color:#000000;
+      line-height:1.55;
+    }
+
+    /* Animasi smooth expand */
+    .content.show{
+      display:block;
+      animation: fadeIn 0.4s ease;
+    }
+
+    @keyframes fadeIn{
+      from{opacity:0; transform:translateY(-6px)}
+      to{opacity:1; transform:translateY(0)}
+    }
+
+    footer{text-align:center;margin-top:18px;color: #ffffff;font-size:13px}
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <a class="back-btn" href="index.html">← Kembali ke Profil</a>
+
+  <div class="card" onclick="toggleContent(this)">
+    <h2>ANGGOTA KELOMPOK</h2>
+    <div class="content"> 
+      <br>1. Fachreizy Eka Putra Batalipu (250311080033) : Pembuat Website
+      <br>2. Ireine Cicilia Simatupang (250311080032) : Moderator
+      <br>3. Karenina N.G Sepang (250311080031) : Narasumber
+      <br>4. Stefanus Roger Lasut (250311080029) : Narasumber
+      <br>5. Grenly Fergio Umboh (250311080030) : Narasumber
+    </div>
+  </div>
+
+
+  <h1>10 Hama dan Penyakit Pada Tanaman</h1>
+
+  <!-- TEMPLATE CARD INTERAKTIF -->
+  <div class="card" onclick="toggleContent(this)">
+    <h2>1. Hama Wereng Batang Coklat Pada Tanaman Padi</h2>
+    <div class="content">Wereng Batang Coklat (WBC) Nilaparvata lugens adalah hama utama padi yang bersifat monofag dan dapat menyebabkan kerusakan berat hingga puso. Hama ini berbahaya karena mudah beradaptasi dan menjadi vektor virus penyakit padi. WBC merusak tanaman dengan mengisap cairan batang sehingga menyebabkan daun menguning hingga kecokelatan. WBC termasuk hama r-strategis, yaitu mampu berkembang biak sangat cepat. Populasinya dipengaruhi oleh faktor biotik (varietas padi dan musuh alami) serta abiotik (iklim, suhu, kelembaban, curah hujan). Varietas padi yang rentan dan kondisi iklim yang sesuai dapat memicu peningkatan populasi hama.</div>
+  </div>
+
+  <div class="card" onclick="toggleContent(this)">
+    <h2>2. Penyakit Tungro Pada Tanaman Padi</h2>
+    <div class="content">Penyakit tungro adalah salah satu penyakit paling merugikan pada tanaman padi yang disebabkan oleh dua jenis virus, yaitu RTSV (Rice Tungro Spherical Virus) dan RTBV (Rice Tungro Bacilliform Virus). Penularannya terutama melalui serangga wereng hijau (Nephotettix sp.) sebagai vektor. Tanaman padi yang terserang tungro menunjukkan gejala berupa daun menguning-oranye, pertumbuhan terhambat, anakan berkurang, serta gabah menjadi hampa. Serangan berat dapat menyebabkan penurunan hasil panen secara signifikan.</div>
+  </div>
+
+  <div class="card" onclick="toggleContent(this)">
+    <h2>3. Ulat Grayak (Spodoptera litura)</h2>
+    <div class="content">Pada umumnya petani di lapangan mengenal Spodoptera litura dengan berbagai sebutan diantaranya adalah ulat tentara dan ulat grayak.  S. litura, dapat menyerang berbagai jenis tanaman mulai dari tanaman sayuran, kacang-kacangan, hingga tanaman jagung. Kerusakan daun oleh ulat grayak mengganggu proses fotosintesis dan akhirnya mengakibatkan kehilangan hasil panen. Besarnya kehilangan hasil tergantung pada tingkat kerusakan daun dan tahap pertumbuhan tanaman waktu terjadi serangan. Kerusakan daun sebesar 12,5% menyebabkan kerugian ekonomi setara dengan biaya dua kali aplikasi insektisida. Keberhasilan tindakan pengendalian bergantung pada pemahaman mengenai bioekologi dari ulat grayak itu sendiri. Pemahaman bioekologi ulat grayak perlu diketahui untuk dipakai sebagai salah satu pertimbangan guna menentukan strategi pengendalian ulat grayak yang efektif. Penggunaan insektisida untuk mengendalikan ulat grayak pada tanaman yang intensif telah banyak dilakukan, namun belum sepenuhnya dapat menekan populasi ulat grayak. Atas pertimbangan biaya dan keamanan lingkungan maka direkomendasikan untuk menerapkan pengendalian hama secara terpadu.</div>
+  </div>
+
+  <div class="card" onclick="toggleContent(this)">
+    <h2>4. Penyakit Kresek & Hawar Daun Bakteri</h2>
+    <div class="content">Penyakit hawar daun bakteri (HDB) merupakan salah satu penyakit padi utama yang tersebar di berbagai ekosistem padi di negara-negara penghasil padi. Penyakit disebabkan oleh bakteri Xanthomonas oryzae pv. oryzae (Xoo). Patogen ini dapat mengenfeksi tanaman padi pada semua fase pertumbuhan tanaman dari mulai pesemaian sampai menjelang panen. Penyebab penyakit (patogen) menginfeksi tanaman padi pada bagian daun melalui luka daun atau lobang alami berupa stomata dan merusak klorofil daun. Hal tersebut menyebabkan menurunnya kemampuan tanaman untuk melakukan fotosintesis yang apabila terjadi pada tanaman muda mengakibatkan mati dan pada tanaman fase generative mengakibatkan pengisian gabah menjadi kurang sempurna.</div>
+  </div>
+
+  <div class="card" onclick="toggleContent(this)">
+    <h2>5. Hama Penggerek Buah Kopi</h2>
+    <div class="content">Hypothenemus hampei, atau Hama Penggerek Buah Kopi (PBKo), adalah hama utama tanaman kopi di seluruh dunia. Serangga kecil ini masuk ke dalam buah kopi dan menggerek bijinya untuk tempat hidup dan berkembang biak. Akibatnya, kualitas dan kuantitas biji kopi menurun drastis.
+Hama betina bertelur di dalam buah kopi, dan larvanya memakan bagian dalam biji sehingga menyebabkan biji berlubang, berwarna hitam, dan menurunkan nilai jual. Serangan parah dapat mengakibatkan kerugian ekonomi besar bagi petani.</div>
+  </div>
+
+  <div class="card" onclick="toggleContent(this)">
+    <h2>6. Lalat Buah (Bactrocera dorsalis)</h2>
+    <div class="content">Lalat buah (Bactrocera dorsalis) adalah serangga kecil dari famili Tephritidae yang dikenal sebagai hama utama pada berbagai jenis buah-buahan. Tubuhnya berukuran sekitar 5-8 mm dengan warna kuning kecokelatan dan memiliki sayap transparan dengan pola garis-garis gelap khas. Lalat ini bertelur di dalam buah yang masih muda atau matang, dan larvanya akan memakan daging buah dari dalam, menyebabkan kerusakan dan pembusukan.</div>
+  </div>
+
+  <div class="card" onclick="toggleContent(this)">
+    <h2>7. Penyakit Busuk Batang pada Aneka Kacang</h2>
+    <div class="content">Penyakit busuk batang pada tanaman aneka kacang adalah penyakit yang umumnya disebabkan oleh jamur patogen seperti Sclerotium rolfsii, Fusarium sp., atau Rhizoctonia solani. Penyakit ini menyerang pangkal batang hingga bagian atas, menyebabkan jaringan tanaman membusuk, berwarna cokelat gelap, dan melemah.
+</div>
+  </div>
+
+  <div class="card" onclick="toggleContent(this)">
+    <h2>8. Penggerek Batang Padi Kuning</h2>
+    <div class="content">PBP (Penggerek Batang Padi) adalah  salah satu hama utama pada  pertanaman Padi di Indonesia. Hama ini dapat menyerang semua stadium  pertumbuhan tanaman padi. Serangan  pada stadium vegetatif menyebabkan kematian anakan (tiller)  muda yang disebut sundep (dead hearts). Serangan pada stadium generatif menyebabkan malai tampak putih dan hampa yang disebut beluk (whiteheads). Sampai saat ini belum ada varietas padi yang tahan terhadap hama penggerek batang padi. Oleh karenanya gejala serangan perlu diwaspadai, terutama pada saat musim penghujan.
+</div>
+  </div>
+
+  <div class="card" onclick="toggleContent(this)">
+    <h2>9. Penyakit Layu Fusarium pada Tanaman Pisang</h2>
+    <div class="content">Penyakit Layu Fusarium, juga dikenal sebagai Panama disease, adalah penyakit penting pada pisang yang disebabkan oleh jamur Fusarium oxysporum f. sp. cubense (Foc). Jamur ini menyerang sistem pembuluh xilem, menghambat aliran air dan nutrisi, sehingga tanaman mengalami kelayuan, daun menguning, batang semu menghitam, dan akhirnya tanaman mati. Penyakit ini menyebar melalui tanah, air, alat pertanian, serta bahan tanam yang terinfeksi, dan dapat bertahan lama di tanah sehingga sulit dikendalikan. Beberapa ras patogen seperti Foc TR4 sangat agresif dan dapat menyerang berbagai kultivar pisang.</div>
+  </div>
+
+  <div class="card" onclick="toggleContent(this)">
+    <h2>10. Root-knot Nematode</h2>
+    <div class="content">Nematoda simpul akar adalah nematoda parasit tumbuhan dari genus Meloidogyne. Mereka ada di tanah di daerah dengan iklim panas atau musim dingin yang pendek. Sekitar 2000 spesies tanaman di seluruh dunia rentan terhadap infeksi oleh nematoda simpul akar dan mereka menyebabkan sekitar 5% kehilangan panen global. [1] Larva nematoda simpul akar menginfeksi akar tanaman, menyebabkan perkembangan empedu simpul akar yang mengalirkan fotosintesis dan nutrisi tanaman. Infeksi tanaman muda mungkin mematikan, sedangkan infeksi tanaman dewasa menyebabkan penurunan hasil.</div>
+  </div>
+
+    <footer>
+      © <span id="year"></span> Fachreizy Batalipu — Dibuat dengan VScode
+    </footer>
+
+</div>
+
+<script>
+function toggleContent(card){
+  const content = card.querySelector('.content');
+  content.classList.toggle('show');
+}
+</script>
+
+</body>
+</html>

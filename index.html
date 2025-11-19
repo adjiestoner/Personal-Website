@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FACHREIZY BATALIPU — Profil</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#6ee7b7;
+      --glass: rgba(255,255,255,0.03);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071024 0%,#07122a 100%);color:#e6eef6;min-height:100vh;}
+    .container{max-width:1000px;margin:40px auto;padding:24px}
+
+    /* header / hero */
+    .hero{display:grid;grid-template-columns:160px 1fr;gap:20px;align-items:center;background:var(--glass);padding:18px;border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,0.6);backdrop-filter:blur(6px)}
+    .avatar{width:140px;height:140px;border-radius:18px;overflow:hidden;border:3px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#0b1220,#0b1630)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .title h1{margin:0;font-size:22px;letter-spacing:0.3px}
+    .title p{margin:6px 0 0;color:var(--muted)}
+    .cta{margin-top:12px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#34d399);color:#062021;text-decoration:none;font-weight:700}
+
+    /* grid for sections */
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    h2{margin:0 0 10px;font-size:16px}
+    p{color:var(--muted);line-height:1.5}
+
+    /* skills */
+    .skill{display:flex;justify-content:space-between;align-items:center;margin:8px 0}
+    .meter{height:8px;background:rgba(255,255,255,0.06);border-radius:999px;overflow:hidden;width:60%}
+    .meter > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#10b981)}
+
+    /* projects */
+    .projects{display:grid;gap:10px}
+    .project{padding:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:10px}
+    .project small{color:var(--muted)}
+
+    /* contact */
+    .contact-row{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;color:var(--muted)}
+
+    footer{text-align:center;margin-top:18px;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:840px){
+      .grid{grid-template-columns:1fr}
+      .hero{grid-template-columns:120px 1fr}
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+
+    <!-- HERO -->
+    <header class="hero" role="banner">
+      <div class="avatar">
+        <!-- GANTI: letakkan foto profil Anda di file img/profile.jpg atau ubah src di bawah -->
+        <img src="img/profile.jpg" alt="Foto Profil">
+      </div>
+      <div class="title">
+        <h1>FACHREIZY BATALIPU</h1>
+        <p>Mahasiswa · Pembelajar Teknologi · Desainer &amp; Developer pemula</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Hubungi Saya</a>
+          <a class="chip" style="margin-left:10px;" href="#about">Tentang</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN GRID -->
+    <main class="grid">
+      <section class="card">
+        <h2 id="about">Tentang Saya</h2>
+        <p>
+          Halo — saya Fachreizy. Saya adalah seorang Mahasiswa di Universitas Sam Ratulangi Manado, Fakultas Pertanian, Program Studi Agroteknologi, dan mempunyai minat di bidang Teknologi terutama pada Internet Of Things, Web Developments, dan Cyber Security.
+        </p>
+
+        <h2 style="margin-top:14px">Keahlian</h2>
+        <div class="skill"><span>HTML &amp; CSS</span><div class="meter" aria-hidden><i style="width:90%"></i></div></div>
+        <div class="skill"><span>JavaScript</span><div class="meter" aria-hidden><i style="width:75%"></i></div></div>
+        <div class="skill"><span>React / Next.js</span><div class="meter" aria-hidden><i style="width:50%"></i></div></div>
+
+        <h2 style="margin-top:14px">Ringkasan</h2>
+        <p>Saya berumur 18 tahun, dengan pengalaman di bidang bisnis digital, dan sekarang saya masih berfokus untuk mengembangkan berbagai skill saya.</p>
+
+        <h2 style="margin-top:14px">Pendidikan</h2>
+        <p><strong>Universitas Sam Ratulangi Manado</strong> — S1, Agroteknologi (2025 — Sekarang)</p>
+
+      </section>
+
+      <aside>
+        <div class="card" style="margin-bottom:12px">
+          <h2>Proyek Terbaru</h2>
+          <div class="projects">
+            <div class="project">
+              <strong>Website Profil</strong>
+              <div><small>HTML • CSS • Responsif</small></div>
+            </div>
+            <div class="project">
+            <strong><a href="hama.html" style="color:#6ee7b7; text-decoration:none;">Hama & Penyakit Tanaman</a></strong>
+            <div><small>Daftar 10 Hama & Penyakit</small></div>
+          </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Kontak</h2>
+          <div class="contact-row">
+            <a class="chip" href="mailto:email@domain.com">email : fachreizyb@gmail</a>
+            <span class="chip">+62 852 8169 5144</span>
+            <a class="chip" href="https://www.linkedin.com/in/adjie-arbara-86ba012a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+            <a class="chip" href="https://github.com/adjiestoner">GitHub</a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Fachreizy Batalipu — Dibuat dengan VScode
+    </footer>
+  </div>
+
+  <script>
+    // Update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple: jika gambar belum ada, tampilkan placeholder SVG
+    const img = document.querySelector('.avatar img');
+    img.addEventListener('error', ()=>{
+      img.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400"><rect width="100%" height="100%" fill="%230b1630"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23a8b3c0" font-family="Inter,Arial" font-size="36">Foto menyusul</text></svg>'
+    })
+  </script>
+</body>
+</html>
